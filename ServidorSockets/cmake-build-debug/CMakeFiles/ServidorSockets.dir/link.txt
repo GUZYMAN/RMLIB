@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ServidorSockets.dir/main.cpp.o CMakeFiles/ServidorSockets.dir/Test.cpp.o  -o ServidorSockets 
