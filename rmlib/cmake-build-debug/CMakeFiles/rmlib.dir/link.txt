@@ -1,0 +1,2 @@
+/usr/bin/ar qc librmlib.a  CMakeFiles/rmlib.dir/library.cpp.o
+/usr/bin/ranlib librmlib.a
