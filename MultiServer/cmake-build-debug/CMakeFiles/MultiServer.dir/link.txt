@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -pthread -g   CMakeFiles/MultiServer.dir/main.cpp.o CMakeFiles/MultiServer.dir/client.cpp.o CMakeFiles/MultiServer.dir/mythread.cpp.o CMakeFiles/MultiServer.dir/server.cpp.o CMakeFiles/MultiServer.dir/NodeMem.cpp.o CMakeFiles/MultiServer.dir/nodo.cpp.o CMakeFiles/MultiServer.dir/list.cpp.o  -o MultiServer 

@@ -1,0 +1,3 @@
+/home/gerald/CLionProjects/MultiServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gerald/CLionProjects/MultiServer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gerald/CLionProjects/MultiServer/cmake-build-debug/CMakeFiles/MultiServer.dir
