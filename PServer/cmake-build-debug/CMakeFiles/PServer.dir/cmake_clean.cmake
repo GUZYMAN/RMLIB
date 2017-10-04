@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PServer.dir/main.cpp.o"
+  "CMakeFiles/PServer.dir/rmRef_h.cpp.o"
   "CMakeFiles/PServer.dir/library.cpp.o"
   "PServer.pdb"
   "PServer"

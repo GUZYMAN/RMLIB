@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/gerald/CLionProjects/PServer/library.cpp
+library.h
+/home/gerald/CLionProjects/PServer/library.h
+
+/home/gerald/CLionProjects/PServer/library.h
 iostream
 -
 stdio.h
@@ -29,10 +33,28 @@ netdb.h
 -
 vector
 -
+rmRef_h.h
+/home/gerald/CLionProjects/PServer/rmRef_h.h
+list
+/home/gerald/CLionProjects/PServer/list
 
 /home/gerald/CLionProjects/PServer/main.cpp
 iostream
 -
-library.cpp
-/home/gerald/CLionProjects/PServer/library.cpp
+library.h
+/home/gerald/CLionProjects/PServer/library.h
+rmRef_h.h
+/home/gerald/CLionProjects/PServer/rmRef_h.h
+
+/home/gerald/CLionProjects/PServer/rmRef_h.cpp
+rmRef_h.h
+/home/gerald/CLionProjects/PServer/rmRef_h.h
+
+/home/gerald/CLionProjects/PServer/rmRef_h.h
+iostream
+-
+unistd.h
+-
+string.h
+-
 

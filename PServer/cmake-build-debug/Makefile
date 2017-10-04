@@ -177,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/PServer.dir/build.make CMakeFiles/PServer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+rmRef_h.o: rmRef_h.cpp.o
+
+.PHONY : rmRef_h.o
+
+# target to build an object file
+rmRef_h.cpp.o:
+	$(MAKE) -f CMakeFiles/PServer.dir/build.make CMakeFiles/PServer.dir/rmRef_h.cpp.o
+.PHONY : rmRef_h.cpp.o
+
+rmRef_h.i: rmRef_h.cpp.i
+
+.PHONY : rmRef_h.i
+
+# target to preprocess a source file
+rmRef_h.cpp.i:
+	$(MAKE) -f CMakeFiles/PServer.dir/build.make CMakeFiles/PServer.dir/rmRef_h.cpp.i
+.PHONY : rmRef_h.cpp.i
+
+rmRef_h.s: rmRef_h.cpp.s
+
+.PHONY : rmRef_h.s
+
+# target to generate assembly for a file
+rmRef_h.cpp.s:
+	$(MAKE) -f CMakeFiles/PServer.dir/build.make CMakeFiles/PServer.dir/rmRef_h.cpp.s
+.PHONY : rmRef_h.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +219,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... rmRef_h.o"
+	@echo "... rmRef_h.i"
+	@echo "... rmRef_h.s"
 .PHONY : help
 
 
