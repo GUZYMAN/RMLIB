@@ -1,5 +1,6 @@
 #include "server.h"
 #include "NodeMem.cpp"
+#include "list.h"
 #include <list>
 
 using namespace std;
@@ -116,12 +117,19 @@ void *Server::HandleClient(void *args) {
             lista = parser(x);
             if (lista.front() == "1"){
                 createNodo(lista);
+
             }
+            if(lista.front() == "2"){
+                NodeMem rmRef;
+                string delim = "&";
+                lista.pop_front();
+                rmRef = List<NodeMem>::Instance().search(lista.front());
+                rmRef.setReferencesPlus();
+                string dataToSend;
+                dataToSend = rmRef.getKey() + delim + rmRef.getValue() + delim + rmRef.getValue_size() + delim;
+                SendToAll(const_cast<char *>(dataToSend.c_str()));
 
-
-
-            //cout << buffer << "caca" << endl;
-            //if(buffer[12] == "gerald&1&4&"){cout << "sirve" << endl;}
+            }
             cout << "Will send to all: " << message << endl;
             Server::SendToAll(message);
         }
@@ -171,7 +179,6 @@ std::string Server::bufferToString(char* buffer, int bufflen)
 
 list<string> Server::parser(std::string s){
     std::string delimiter = "&";
-    NodeMem mem;
     list<string> lista;
     list<string> lista2;
     size_t pos = 0;
@@ -179,25 +186,15 @@ list<string> Server::parser(std::string s){
     while ((pos = s.find(delimiter)) != std::string::npos) {
         token = s.substr(0, pos);
         lista.push_back(token);
-        //std::cout << token << std::endl;
+        std::cout << token << std::endl;
         s.erase(0, pos + delimiter.length());
     }
     lista2 = lista;
-    /*
-    lista2.pop_front();
-    mem.setKey(lista2.front());
-    lista2.pop_front();
-    mem.setValue(lista2.front());
-    lista2.pop_front();
-    mem.setValue_size(lista2.front());
-    lista2.pop_front();
-    cout << mem.getKey() << endl;
-    cout << mem.getValue() << endl;
-    cout << mem.getValue_size() << endl;*/
     return lista2;
 }
 void Server::createNodo(list<string> lista) {
     NodeMem mem;
+    string delim = "&";
     lista.pop_front();
     mem.setKey(lista.front());
     lista.pop_front();
@@ -205,5 +202,7 @@ void Server::createNodo(list<string> lista) {
     lista.pop_front();
     mem.setValue_size(lista.front());
     lista.pop_front();
+    List<NodeMem>::Instance().add_end(mem);
+
 }
 

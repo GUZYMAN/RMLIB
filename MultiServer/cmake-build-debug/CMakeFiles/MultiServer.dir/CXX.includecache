@@ -41,6 +41,8 @@ cstdlib
 -
 
 /home/gerald/CLionProjects/MultiServer/list.cpp
+assert.h
+-
 list.h
 /home/gerald/CLionProjects/MultiServer/list.h
 NodeMem.h
@@ -54,6 +56,8 @@ iostream
 string
 -
 stdlib.h
+-
+assert.h
 -
 nodo.h
 /home/gerald/CLionProjects/MultiServer/nodo.h
@@ -71,8 +75,6 @@ server.h
 /home/gerald/CLionProjects/MultiServer/server.h
 list.h
 /home/gerald/CLionProjects/MultiServer/list.h
-list.cpp
-/home/gerald/CLionProjects/MultiServer/list.cpp
 NodeMem.cpp
 /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
 
@@ -105,6 +107,8 @@ server.h
 /home/gerald/CLionProjects/MultiServer/server.h
 NodeMem.cpp
 /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
+list.h
+/home/gerald/CLionProjects/MultiServer/list.h
 list
 -
 

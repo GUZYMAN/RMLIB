@@ -13,9 +13,13 @@ private:
     string key;
     string value;
     string value_size;
+    int references;
+
 
 public:
-    NodeMem(){}
+    NodeMem(){
+        references = 1;
+    }
     const string &getValue_size() const {
         return value_size;
     }
@@ -39,7 +43,16 @@ public:
     void setKey(const string &key) {
         NodeMem::key = key;
     }
+    int getReferences() const {
+        return references;
+    }
 
+    void setReferencesPlus() {
+        NodeMem::references = references +1;
+    }
+    void setReferencesMinus(){
+        NodeMem::references = references -1;
+    }
 
 };
 

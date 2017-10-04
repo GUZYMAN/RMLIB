@@ -17,7 +17,6 @@ CMakeFiles/MultiServer.dir/main.cpp.o
  /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
  /home/gerald/CLionProjects/MultiServer/NodeMem.h
  /home/gerald/CLionProjects/MultiServer/client.h
- /home/gerald/CLionProjects/MultiServer/list.cpp
  /home/gerald/CLionProjects/MultiServer/list.h
  /home/gerald/CLionProjects/MultiServer/main.cpp
  /home/gerald/CLionProjects/MultiServer/mythread.h
@@ -34,6 +33,9 @@ CMakeFiles/MultiServer.dir/server.cpp.o
  /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
  /home/gerald/CLionProjects/MultiServer/NodeMem.h
  /home/gerald/CLionProjects/MultiServer/client.h
+ /home/gerald/CLionProjects/MultiServer/list.h
  /home/gerald/CLionProjects/MultiServer/mythread.h
+ /home/gerald/CLionProjects/MultiServer/nodo.cpp
+ /home/gerald/CLionProjects/MultiServer/nodo.h
  /home/gerald/CLionProjects/MultiServer/server.cpp
  /home/gerald/CLionProjects/MultiServer/server.h
