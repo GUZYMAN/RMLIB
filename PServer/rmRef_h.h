@@ -36,7 +36,21 @@ public:
         setLlave(x.getLlave());
         setValue(x.getValue());
         setValue_size(x.getValue_size());
+    }
 
+    bool operator==(rmRef_h x){
+        if(x.getLlave() == this->llave){
+            return true;
+        }
+        else{return false;
+        }
+    }
+    bool operator!=(rmRef_h x){
+        if(x.getLlave() != this->llave){
+            return true;
+        }
+        else{return false;
+        }
     }
 };
 #endif //PSERVER_RMREF_H_H

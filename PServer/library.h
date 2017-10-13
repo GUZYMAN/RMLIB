@@ -101,6 +101,7 @@ public:
         string header = "3";
         dataToSend = header + delim + handler->getLlave() + delim;
         Send(dataToSend);
+        cout << "Nodo con la llave: " + handler->getLlave() + " eliminado" << endl;
     }
 
     bool Send(string data){

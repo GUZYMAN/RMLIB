@@ -4,7 +4,7 @@
 
 
 int main(int argc, char *argv[]) {
-    rmRef_h nodo;
+    rmRef_h nodo, nodo2, nodo3, nodo4, nodo5;
 
     TCPClient tcp;
     tcp.rm_init("localhost", 8888);
@@ -23,5 +23,11 @@ int main(int argc, char *argv[]) {
     tcp.rm_new("diego", vptr5, sizeof(x5));
     string rec = tcp.receive();
     cout << "Server Response:" << rec << endl;
-    nodo = tcp.rm_get("guzman");
+    nodo = tcp.rm_get("gerald");
+    /*nodo3 = tcp.rm_get("steven");
+    nodo3 = tcp.rm_get("guzman");
+    nodo3 = tcp.rm_get("fernandez");
+    nodo3 = tcp.rm_get("diego");*/
+    rmRef_h* ptr = &nodo;
+    tcp.rm_delete(ptr);
 }
