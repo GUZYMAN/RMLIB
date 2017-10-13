@@ -1,6 +1,7 @@
 #include "server.h"
 #include "NodeMem.cpp"
 #include "list.h"
+#include "garbageCollector.h"
 #include <list>
 
 using namespace std;
@@ -73,6 +74,10 @@ void *Server::HandleClient(void *args) {
 
     //Add client in Static clients <vector> (Critical section!)
     MyThread::LockMutex((const char *) c->name);
+    garbageCollector *gC;
+    gC = new garbageCollector;
+    gC->init();
+
 
     //Before adding the new client, calculate its id. (Now we have the lock)
     c->SetId(Server::clients.size());
@@ -130,6 +135,16 @@ void *Server::HandleClient(void *args) {
                 SendToAll(const_cast<char *>(dataToSend.c_str()));
 
             }
+            if(lista.front() == "3"){
+
+                lista.pop_front();
+                List<NodeMem>::Instance().del_by_data(lista.front());
+
+            }
+            cout << "Lista" << endl;
+            List<NodeMem>::Instance().print();
+            cout << "Fin lista" << endl;
+
             cout << "Will send to all: " << message << endl;
             Server::SendToAll(message);
         }

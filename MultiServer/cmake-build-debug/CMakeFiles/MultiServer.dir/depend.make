@@ -16,6 +16,7 @@ CMakeFiles/MultiServer.dir/list.cpp.o: ../nodo.h
 CMakeFiles/MultiServer.dir/main.cpp.o: ../NodeMem.cpp
 CMakeFiles/MultiServer.dir/main.cpp.o: ../NodeMem.h
 CMakeFiles/MultiServer.dir/main.cpp.o: ../client.h
+CMakeFiles/MultiServer.dir/main.cpp.o: ../garbageCollector.h
 CMakeFiles/MultiServer.dir/main.cpp.o: ../list.h
 CMakeFiles/MultiServer.dir/main.cpp.o: ../main.cpp
 CMakeFiles/MultiServer.dir/main.cpp.o: ../mythread.h
@@ -32,6 +33,7 @@ CMakeFiles/MultiServer.dir/nodo.cpp.o: ../nodo.h
 CMakeFiles/MultiServer.dir/server.cpp.o: ../NodeMem.cpp
 CMakeFiles/MultiServer.dir/server.cpp.o: ../NodeMem.h
 CMakeFiles/MultiServer.dir/server.cpp.o: ../client.h
+CMakeFiles/MultiServer.dir/server.cpp.o: ../garbageCollector.h
 CMakeFiles/MultiServer.dir/server.cpp.o: ../list.h
 CMakeFiles/MultiServer.dir/server.cpp.o: ../mythread.h
 CMakeFiles/MultiServer.dir/server.cpp.o: ../nodo.cpp

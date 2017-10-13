@@ -4,6 +4,7 @@
 #include "server.h"
 #include "list.h"
 #include "NodeMem.cpp"
+#include "garbageCollector.h"
 
 using namespace std;
 
@@ -22,8 +23,6 @@ int main() {
     cout <<List<NodeMem>::Instance().getM_num_nodes()<<endl;
     List<NodeMem>::Instance().del_by_data("guzman");
     cout<<List<NodeMem>::Instance().getM_num_nodes()<<endl;*/
-
-
 
     Server *s;
     s = new Server();

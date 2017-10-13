@@ -96,6 +96,9 @@
 		<Unit filename="/home/gerald/CLionProjects/MultiServer/client.h">
 			<Option target="MultiServer"/>
 		</Unit>
+		<Unit filename="/home/gerald/CLionProjects/MultiServer/garbageCollector.h">
+			<Option target="MultiServer"/>
+		</Unit>
 		<Unit filename="/home/gerald/CLionProjects/MultiServer/list.cpp">
 			<Option target="MultiServer"/>
 		</Unit>

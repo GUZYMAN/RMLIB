@@ -26,7 +26,8 @@ public:
     void add_sort(T);
     void concat(List);
     void del_all();
-    void del_by_data(string);
+    void recorrer();
+    void del_by_data(string data);
     void del_by_position(int);
     void fill_by_user(int);
     void fill_random(int);
@@ -34,6 +35,7 @@ public:
     void invert();
     void load_file(string);
     void print();
+    void track();
     void save_file(string);
     NodeMem search(string);
     void sort();
@@ -138,18 +140,18 @@ void List<T>::del_all()
 
 // Eliminar por data del nodo
 template<typename T>
-void List<T>::del_by_data(string data_)
+void List<T>::del_by_data(string data)
 {
     Node<T> *temp = m_head;
     Node<T> *temp1 = m_head->next;
 
     int cont = 0;
 
-    if (m_head->data.getKey() == data_) {
+    if (m_head->data.getKey() == data) {
         m_head = temp->next;
     } else {
         while (temp1) {
-            if (temp1->data.getKey() == data_) {
+            if (temp1->data.getKey() == data) {
                 Node<T> *aux_node = temp1;
                 temp->next = temp1->next;
                 delete aux_node;
@@ -160,13 +162,43 @@ void List<T>::del_by_data(string data_)
             temp1 = temp1->next;
         }
     }
+    print();
 
     if (cont == 0) {
         cout << "No existe el dato " << endl;
     }
 }
 
+// Eliminar por data del nodo
+template<typename T>
+void List<T>::recorrer()
+{
+    Node<T> *temp = m_head;
+    Node<T> *temp1 = m_head->next;
 
+    int cont = 0;
+
+    if (m_head->data.getReferences() == 0) {
+        m_head = temp->next;
+    } else {
+        while (temp1) {
+            if (temp1->data.getReferences() == 0) {
+                Node<T> *aux_node = temp1;
+                temp->next = temp1->next;
+                delete aux_node;
+                cont++;
+                m_num_nodes--;
+                print();
+            }
+            temp = temp->next;
+            temp1 = temp1->next;
+        }
+    }
+
+    if (cont == 0) {
+        cout << "No existe el dato " << endl;
+    }
+}
 
 // Invertir la lista
 template<typename T>
@@ -212,7 +244,7 @@ void List<T>::print()
         cout << "La Lista está vacía " << endl;
     } else {
         while (temp) {
-            temp->print();
+            cout << temp->data.getKey() << endl;
             if (!temp->next) cout << "NULL";
             temp = temp->next;
         }

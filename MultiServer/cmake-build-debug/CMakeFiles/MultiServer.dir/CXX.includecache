@@ -40,6 +40,16 @@ cstdio
 cstdlib
 -
 
+/home/gerald/CLionProjects/MultiServer/garbageCollector.h
+chrono
+-
+thread
+-
+list.h
+/home/gerald/CLionProjects/MultiServer/list.h
+NodeMem.h
+/home/gerald/CLionProjects/MultiServer/NodeMem.h
+
 /home/gerald/CLionProjects/MultiServer/list.cpp
 assert.h
 -
@@ -77,6 +87,8 @@ list.h
 /home/gerald/CLionProjects/MultiServer/list.h
 NodeMem.cpp
 /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
+garbageCollector.h
+/home/gerald/CLionProjects/MultiServer/garbageCollector.h
 
 /home/gerald/CLionProjects/MultiServer/mythread.cpp
 mythread.h
@@ -109,6 +121,8 @@ NodeMem.cpp
 /home/gerald/CLionProjects/MultiServer/NodeMem.cpp
 list.h
 /home/gerald/CLionProjects/MultiServer/list.h
+garbageCollector.h
+/home/gerald/CLionProjects/MultiServer/garbageCollector.h
 list
 -
 
