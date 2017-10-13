@@ -57,38 +57,38 @@ include CMakeFiles/rmlib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rmlib.dir/flags.make
 
-CMakeFiles/rmlib.dir/library.cpp.o: CMakeFiles/rmlib.dir/flags.make
-CMakeFiles/rmlib.dir/library.cpp.o: ../library.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerald/CLionProjects/rmlib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rmlib.dir/library.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rmlib.dir/library.cpp.o -c /home/gerald/CLionProjects/rmlib/library.cpp
+CMakeFiles/rmlib.dir/rmRef_h.cpp.o: CMakeFiles/rmlib.dir/flags.make
+CMakeFiles/rmlib.dir/rmRef_h.cpp.o: ../rmRef_h.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gerald/CLionProjects/rmlib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rmlib.dir/rmRef_h.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rmlib.dir/rmRef_h.cpp.o -c /home/gerald/CLionProjects/rmlib/rmRef_h.cpp
 
-CMakeFiles/rmlib.dir/library.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmlib.dir/library.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gerald/CLionProjects/rmlib/library.cpp > CMakeFiles/rmlib.dir/library.cpp.i
+CMakeFiles/rmlib.dir/rmRef_h.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rmlib.dir/rmRef_h.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gerald/CLionProjects/rmlib/rmRef_h.cpp > CMakeFiles/rmlib.dir/rmRef_h.cpp.i
 
-CMakeFiles/rmlib.dir/library.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmlib.dir/library.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gerald/CLionProjects/rmlib/library.cpp -o CMakeFiles/rmlib.dir/library.cpp.s
+CMakeFiles/rmlib.dir/rmRef_h.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rmlib.dir/rmRef_h.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gerald/CLionProjects/rmlib/rmRef_h.cpp -o CMakeFiles/rmlib.dir/rmRef_h.cpp.s
 
-CMakeFiles/rmlib.dir/library.cpp.o.requires:
+CMakeFiles/rmlib.dir/rmRef_h.cpp.o.requires:
 
-.PHONY : CMakeFiles/rmlib.dir/library.cpp.o.requires
+.PHONY : CMakeFiles/rmlib.dir/rmRef_h.cpp.o.requires
 
-CMakeFiles/rmlib.dir/library.cpp.o.provides: CMakeFiles/rmlib.dir/library.cpp.o.requires
-	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/library.cpp.o.provides.build
-.PHONY : CMakeFiles/rmlib.dir/library.cpp.o.provides
+CMakeFiles/rmlib.dir/rmRef_h.cpp.o.provides: CMakeFiles/rmlib.dir/rmRef_h.cpp.o.requires
+	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/rmRef_h.cpp.o.provides.build
+.PHONY : CMakeFiles/rmlib.dir/rmRef_h.cpp.o.provides
 
-CMakeFiles/rmlib.dir/library.cpp.o.provides.build: CMakeFiles/rmlib.dir/library.cpp.o
+CMakeFiles/rmlib.dir/rmRef_h.cpp.o.provides.build: CMakeFiles/rmlib.dir/rmRef_h.cpp.o
 
 
 # Object files for target rmlib
 rmlib_OBJECTS = \
-"CMakeFiles/rmlib.dir/library.cpp.o"
+"CMakeFiles/rmlib.dir/rmRef_h.cpp.o"
 
 # External object files for target rmlib
 rmlib_EXTERNAL_OBJECTS =
 
-librmlib.a: CMakeFiles/rmlib.dir/library.cpp.o
+librmlib.a: CMakeFiles/rmlib.dir/rmRef_h.cpp.o
 librmlib.a: CMakeFiles/rmlib.dir/build.make
 librmlib.a: CMakeFiles/rmlib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gerald/CLionProjects/rmlib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library librmlib.a"
@@ -100,7 +100,7 @@ CMakeFiles/rmlib.dir/build: librmlib.a
 
 .PHONY : CMakeFiles/rmlib.dir/build
 
-CMakeFiles/rmlib.dir/requires: CMakeFiles/rmlib.dir/library.cpp.o.requires
+CMakeFiles/rmlib.dir/requires: CMakeFiles/rmlib.dir/rmRef_h.cpp.o.requires
 
 .PHONY : CMakeFiles/rmlib.dir/requires
 

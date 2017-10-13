@@ -123,32 +123,32 @@ rmlib/fast:
 	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/build
 .PHONY : rmlib/fast
 
-library.o: library.cpp.o
+rmRef_h.o: rmRef_h.cpp.o
 
-.PHONY : library.o
+.PHONY : rmRef_h.o
 
 # target to build an object file
-library.cpp.o:
-	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/library.cpp.o
-.PHONY : library.cpp.o
+rmRef_h.cpp.o:
+	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/rmRef_h.cpp.o
+.PHONY : rmRef_h.cpp.o
 
-library.i: library.cpp.i
+rmRef_h.i: rmRef_h.cpp.i
 
-.PHONY : library.i
+.PHONY : rmRef_h.i
 
 # target to preprocess a source file
-library.cpp.i:
-	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/library.cpp.i
-.PHONY : library.cpp.i
+rmRef_h.cpp.i:
+	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/rmRef_h.cpp.i
+.PHONY : rmRef_h.cpp.i
 
-library.s: library.cpp.s
+rmRef_h.s: rmRef_h.cpp.s
 
-.PHONY : library.s
+.PHONY : rmRef_h.s
 
 # target to generate assembly for a file
-library.cpp.s:
-	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/library.cpp.s
-.PHONY : library.cpp.s
+rmRef_h.cpp.s:
+	$(MAKE) -f CMakeFiles/rmlib.dir/build.make CMakeFiles/rmlib.dir/rmRef_h.cpp.s
+.PHONY : rmRef_h.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... rmlib"
-	@echo "... library.o"
-	@echo "... library.i"
-	@echo "... library.s"
+	@echo "... rmRef_h.o"
+	@echo "... rmRef_h.i"
+	@echo "... rmRef_h.s"
 .PHONY : help
 
 

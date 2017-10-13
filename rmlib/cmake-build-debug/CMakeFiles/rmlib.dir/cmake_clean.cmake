@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rmlib.dir/library.cpp.o"
+  "CMakeFiles/rmlib.dir/rmRef_h.cpp.o"
   "librmlib.pdb"
   "librmlib.a"
 )

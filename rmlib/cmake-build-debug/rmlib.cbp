@@ -84,10 +84,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/gerald/CLionProjects/rmlib/library.cpp">
+		<Unit filename="/home/gerald/CLionProjects/rmlib/rmRef_h.cpp">
 			<Option target="rmlib"/>
 		</Unit>
-		<Unit filename="/home/gerald/CLionProjects/rmlib/library.h">
+		<Unit filename="/home/gerald/CLionProjects/rmlib/rmRef_h.h">
+			<Option target="rmlib"/>
+		</Unit>
+		<Unit filename="/home/gerald/CLionProjects/rmlib/rmlib.h">
 			<Option target="rmlib"/>
 		</Unit>
 		<Unit filename="/home/gerald/CLionProjects/rmlib/CMakeLists.txt">
